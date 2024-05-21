@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "EVE_NFT_Contract_backend": {
+      "main": "src/EVE_NFT_Contract_backend/main.mo",
+      "type": "motoko"
+    },
+    "EVE_NFT_Contract_frontend": {
+      "dependencies": [
+        "EVE_NFT_Contract_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/EVE_NFT_Contract_frontend/src/index.html"
+      },
+      "source": [
+        "src/EVE_NFT_Contract_frontend/assets",
+        "dist/EVE_NFT_Contract_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
